@@ -1,0 +1,106 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/bin/java -cp /home/user/spark-2.4.4-bin-hadoop2.7/conf/:/home/user/spark-2.4.4-bin-hadoop2.7/jars/*:/home/user/hadoop-2.7.7/etc/hadoop/ -Xmx1g org.apache.spark.deploy.master.Master --host master --port 7077 --webui-port 8080
+========================================
+20/02/25 18:58:33 INFO master.Master: Started daemon with process name: 19141@master
+20/02/25 18:58:33 INFO util.SignalUtils: Registered signal handler for TERM
+20/02/25 18:58:33 INFO util.SignalUtils: Registered signal handler for HUP
+20/02/25 18:58:33 INFO util.SignalUtils: Registered signal handler for INT
+20/02/25 18:58:33 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/02/25 18:58:34 INFO spark.SecurityManager: Changing view acls to: user
+20/02/25 18:58:34 INFO spark.SecurityManager: Changing modify acls to: user
+20/02/25 18:58:34 INFO spark.SecurityManager: Changing view acls groups to: 
+20/02/25 18:58:34 INFO spark.SecurityManager: Changing modify acls groups to: 
+20/02/25 18:58:34 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(user); groups with view permissions: Set(); users  with modify permissions: Set(user); groups with modify permissions: Set()
+20/02/25 18:58:34 INFO util.Utils: Successfully started service 'sparkMaster' on port 7077.
+20/02/25 18:58:34 INFO master.Master: Starting Spark master at spark://master:7077
+20/02/25 18:58:34 INFO master.Master: Running Spark version 2.4.4
+20/02/25 18:58:34 INFO util.log: Logging initialized @2074ms
+20/02/25 18:58:34 INFO server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+20/02/25 18:58:34 INFO server.Server: Started @2137ms
+20/02/25 18:58:34 INFO server.AbstractConnector: Started ServerConnector@3cd3c180{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+20/02/25 18:58:34 INFO util.Utils: Successfully started service 'MasterUI' on port 8080.
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@170fcf03{/app,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@174f57da{/app/json,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1e519cd9{/,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@b59e633{/json,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@66459105{/static,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@471b108e{/app/kill,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@704bccdb{/driver/kill,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO ui.MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://master:8080
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7f9654d2{/metrics/master/json,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@67f8fb60{/metrics/applications/json,null,AVAILABLE,@Spark}
+20/02/25 18:58:34 INFO master.Master: I have been elected leader! New state: ALIVE
+20/02/25 18:58:38 INFO master.Master: Registering worker 192.168.0.2:36374 with 2 cores, 1024.0 MB RAM
+20/02/25 19:14:10 WARN http.HttpParser: bad HTTP parsed: 400 No Host for HttpChannelOverHttp@3c1c766{r=0,c=false,a=IDLE,uri=null}
+20/02/25 19:19:48 INFO master.Master: Registering app PySparkShell
+20/02/25 19:19:48 INFO master.Master: Registered app PySparkShell with ID app-20200225191948-0000
+20/02/25 19:19:48 INFO master.Master: Launching executor app-20200225191948-0000/0 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:19:48 INFO master.Master: Launching executor app-20200225191948-0000/1 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:19:52 INFO master.Master: Received unregister request from application app-20200225191948-0000
+20/02/25 19:19:52 INFO master.Master: Removing app app-20200225191948-0000
+20/02/25 19:19:52 INFO master.Master: 83.212.74.139:45372 got disassociated, removing it.
+20/02/25 19:19:52 INFO master.Master: master:36057 got disassociated, removing it.
+20/02/25 19:19:52 WARN master.Master: Got status update for unknown executor app-20200225191948-0000/0
+20/02/25 19:19:52 WARN master.Master: Got status update for unknown executor app-20200225191948-0000/1
+20/02/25 19:20:44 INFO master.Master: Registering app PySparkShell
+20/02/25 19:20:44 INFO master.Master: Registered app PySparkShell with ID app-20200225192044-0001
+20/02/25 19:20:44 INFO master.Master: Launching executor app-20200225192044-0001/0 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:20:44 INFO master.Master: Launching executor app-20200225192044-0001/1 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:28:58 INFO master.Master: Received unregister request from application app-20200225192044-0001
+20/02/25 19:28:58 INFO master.Master: Removing app app-20200225192044-0001
+20/02/25 19:28:58 INFO master.Master: 83.212.74.139:45380 got disassociated, removing it.
+20/02/25 19:28:58 INFO master.Master: master:42499 got disassociated, removing it.
+20/02/25 19:28:58 WARN master.Master: Got status update for unknown executor app-20200225192044-0001/0
+20/02/25 19:28:58 WARN master.Master: Got status update for unknown executor app-20200225192044-0001/1
+20/02/25 19:29:30 INFO master.Master: Registering app PySparkShell
+20/02/25 19:29:30 INFO master.Master: Registered app PySparkShell with ID app-20200225192930-0002
+20/02/25 19:29:30 INFO master.Master: Launching executor app-20200225192930-0002/0 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:29:30 INFO master.Master: Launching executor app-20200225192930-0002/1 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:30:43 INFO master.Master: Received unregister request from application app-20200225192930-0002
+20/02/25 19:30:43 INFO master.Master: Removing app app-20200225192930-0002
+20/02/25 19:30:43 INFO master.Master: 83.212.74.139:45418 got disassociated, removing it.
+20/02/25 19:30:43 INFO master.Master: master:46091 got disassociated, removing it.
+20/02/25 19:30:43 WARN master.Master: Got status update for unknown executor app-20200225192930-0002/1
+20/02/25 19:30:43 WARN master.Master: Got status update for unknown executor app-20200225192930-0002/0
+20/02/25 19:31:42 INFO master.Master: Registering app PySparkShell
+20/02/25 19:31:42 INFO master.Master: Registered app PySparkShell with ID app-20200225193142-0003
+20/02/25 19:31:42 INFO master.Master: Launching executor app-20200225193142-0003/0 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:31:42 INFO master.Master: Launching executor app-20200225193142-0003/1 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:32:34 INFO master.Master: Received unregister request from application app-20200225193142-0003
+20/02/25 19:32:34 INFO master.Master: Removing app app-20200225193142-0003
+20/02/25 19:32:34 INFO master.Master: 83.212.74.139:45426 got disassociated, removing it.
+20/02/25 19:32:34 INFO master.Master: master:44215 got disassociated, removing it.
+20/02/25 19:32:35 WARN master.Master: Got status update for unknown executor app-20200225193142-0003/1
+20/02/25 19:32:35 WARN master.Master: Got status update for unknown executor app-20200225193142-0003/0
+20/02/25 19:52:34 INFO master.Master: Registering app kmeans
+20/02/25 19:52:34 INFO master.Master: Registered app kmeans with ID app-20200225195234-0004
+20/02/25 19:52:34 INFO master.Master: Launching executor app-20200225195234-0004/0 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 19:52:34 INFO master.Master: Launching executor app-20200225195234-0004/1 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 20:01:02 INFO master.Master: Received unregister request from application app-20200225195234-0004
+20/02/25 20:01:02 INFO master.Master: Removing app app-20200225195234-0004
+20/02/25 20:01:02 INFO master.Master: 83.212.74.139:45536 got disassociated, removing it.
+20/02/25 20:01:02 INFO master.Master: master:41014 got disassociated, removing it.
+20/02/25 20:01:02 WARN master.Master: Got status update for unknown executor app-20200225195234-0004/0
+20/02/25 20:01:02 WARN master.Master: Got status update for unknown executor app-20200225195234-0004/1
+20/02/25 20:13:14 INFO master.Master: Registering app kmeans
+20/02/25 20:13:14 INFO master.Master: Registered app kmeans with ID app-20200225201314-0005
+20/02/25 20:13:14 INFO master.Master: Launching executor app-20200225201314-0005/0 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 20:13:14 INFO master.Master: Launching executor app-20200225201314-0005/1 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 20:21:29 INFO master.Master: Received unregister request from application app-20200225201314-0005
+20/02/25 20:21:29 INFO master.Master: Removing app app-20200225201314-0005
+20/02/25 20:21:29 INFO master.Master: 83.212.74.139:45602 got disassociated, removing it.
+20/02/25 20:21:29 INFO master.Master: master:35851 got disassociated, removing it.
+20/02/25 20:21:29 WARN master.Master: Got status update for unknown executor app-20200225201314-0005/0
+20/02/25 20:21:30 WARN master.Master: Got status update for unknown executor app-20200225201314-0005/1
+20/02/25 20:23:30 WARN http.HttpParser: bad HTTP parsed: 400 No Host for HttpChannelOverHttp@7d09241b{r=0,c=false,a=IDLE,uri=null}
+20/02/25 20:24:49 INFO master.Master: Registering app kmeans
+20/02/25 20:24:49 INFO master.Master: Registered app kmeans with ID app-20200225202449-0006
+20/02/25 20:24:49 INFO master.Master: Launching executor app-20200225202449-0006/0 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 20:24:49 INFO master.Master: Launching executor app-20200225202449-0006/1 on worker worker-20200225185837-192.168.0.2-36374
+20/02/25 20:33:10 INFO master.Master: Received unregister request from application app-20200225202449-0006
+20/02/25 20:33:10 INFO master.Master: Removing app app-20200225202449-0006
+20/02/25 20:33:10 INFO master.Master: 83.212.74.139:45648 got disassociated, removing it.
+20/02/25 20:33:10 INFO master.Master: master:43831 got disassociated, removing it.
+20/02/25 20:33:10 WARN master.Master: Got status update for unknown executor app-20200225202449-0006/1
+20/02/25 20:33:10 WARN master.Master: Got status update for unknown executor app-20200225202449-0006/0
+20/02/25 20:43:27 WARN http.HttpParser: bad HTTP parsed: 400 No Host for HttpChannelOverHttp@5ea45a27{r=0,c=false,a=IDLE,uri=null}
+20/02/25 20:57:59 WARN http.HttpParser: bad HTTP parsed: 400 No Host for HttpChannelOverHttp@1c39435e{r=0,c=false,a=IDLE,uri=null}
