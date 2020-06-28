@@ -26,6 +26,6 @@ hadoop fs -getmerge hdfs://master:9000/kmeans_with_map_reduce.results ./kmeans_w
 ```
 
 5. Access Results  
-'''
+```
 cat map_reduce_kmeans.res 
-'''
+```
